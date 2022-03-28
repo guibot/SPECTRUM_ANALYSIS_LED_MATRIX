@@ -1,7 +1,8 @@
-
+// list of input devices
 int pots[] = {A4, A5, A6, A7, A0, A1, A2, A3};
 int buttons[] = {12, 11, 10, 9, 8, 7, 6, 5};
 
+// FastLEd lybrary
 #include <WS2812Serial.h>
 #define USE_WS2812SERIAL
 #define FASTLED_ALLOW_INTERRUPTS 0
@@ -37,13 +38,18 @@ int fadeoutB = 1;
 
 
 void setup() {
+  // serial comm
   Serial.begin(9600);
+
+  // fastled instantiation
   FastLED.addLeds<WS2812SERIAL, DATA_PIN, GBR>(strip, TOTAL_LEDS);
   FastLED.setBrightness(10);
 
+  // pinmode for the buttons
   for (int i = 0; i < 8; i++)
     pinMode(buttons[i], INPUT);
 
+  // map the leds according to the matrix orientation
   for (int j = 0; j < TOTAL_BANDS; j++)
   {
     for (int k = 0; k < TOTAL_ROWS; k++)
@@ -68,6 +74,7 @@ void setup() {
 void loop()
 {
   /**/
+  // updating the led Matrix every 3 ms
   unsigned long currentMillis = millis();
   if (currentMillis - previousMillis >= led_matrix_interval) {
     previousMillis = currentMillis;
@@ -86,7 +93,6 @@ void serial_read()
     for (int i = 0; i < TOTAL_BANDS; i++)
     {
       band_volume[i] = Serial.read();
-
     }
   }
 }
