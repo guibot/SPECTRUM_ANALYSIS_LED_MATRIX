@@ -40,6 +40,88 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 331.0, 630.0, 29.0, 22.0 ],
+					"text" : "thru"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 424.199999451637268, 602.0, 39.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 203.199999451637268, 114.900000333786011, 39.0, 22.0 ],
+					"text" : "port e"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 424.0, 578.0, 39.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 203.0, 90.900000333786011, 39.0, 22.0 ],
+					"text" : "port d"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 424.0, 554.0, 39.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 203.0, 66.900000333786011, 39.0, 22.0 ],
+					"text" : "port c"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 424.0, 530.0, 39.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 203.0, 42.900000333786011, 39.0, 22.0 ],
+					"text" : "port b"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 424.0, 504.0, 39.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 203.0, 16.900000333786011, 39.0, 22.0 ],
+					"text" : "port a"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -363,7 +445,7 @@
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
 					"id" : "obj-51",
-					"items" : [ "Bluetooth-Incoming-Port", ",", "usbserial-A8008Eja" ],
+					"items" : "Bluetooth-Incoming-Port",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -573,6 +655,30 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"midpoints" : [ 433.5, 561.0, 340.5, 561.0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"midpoints" : [ 433.5, 576.5, 340.5, 576.5 ],
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"midpoints" : [ 433.5, 592.5, 340.5, 592.5 ],
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
 					"source" : [ "obj-13", 0 ]
 				}
@@ -580,8 +686,31 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"midpoints" : [ 433.5, 608.5, 340.5, 608.5 ],
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"midpoints" : [ 433.699999451637268, 627.5, 340.5, 627.5 ],
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-17", 0 ]
 				}
 
 			}
@@ -744,7 +873,13 @@
 			"inherited_shortname" : 1
 		}
 ,
-		"dependency_cache" : [  ],
+		"dependency_cache" : [ 			{
+				"name" : "thru.maxpat",
+				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
 		"autosave" : 0,
 		"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 		"editing_bgcolor" : [ 0.313725490196078, 0.313725490196078, 0.313725490196078, 1.0 ]
