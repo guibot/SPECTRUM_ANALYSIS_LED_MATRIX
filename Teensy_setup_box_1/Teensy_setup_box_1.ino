@@ -1,6 +1,6 @@
 // led matrix pin 2
 // neopixel pin 5
-int pots_pins[8] = {A13, A12, A11, A10, A0, A1, A2, A3};
+int pots_pins[8] = {A4, A5, A6, A7, A0, A1, A2, A3};
 int bt_pins[8] = {24, 25, 26, 27, 12, 11, 10, 9};
 
 void setup() {

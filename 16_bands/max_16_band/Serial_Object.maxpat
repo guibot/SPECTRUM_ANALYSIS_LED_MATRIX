@@ -222,7 +222,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 119.0, 287.0, 30.0, 30.0 ]
+					"patching_rect" : [ 119.0, 300.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -710,6 +710,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
+					"midpoints" : [ 340.5, 662.0, 234.5, 662.0, 234.5, 245.0, 128.5, 245.0 ],
 					"source" : [ "obj-17", 0 ]
 				}
 
