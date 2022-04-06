@@ -1,0 +1,47 @@
+{
+	"pattrstorage" : 	{
+		"name" : "u983002753",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"adstatus_driver" : [ 7 ],
+					"adstatus_mic" : [ 1 ],
+					"adstatus_speaker" : [ 1 ],
+					"button[10]" : [ 0.0 ],
+					"button[11]" : [ 0.0 ],
+					"button[12]" : [ 0.0 ],
+					"button[4]" : [ 0.0 ],
+					"button[9]" : [ 0.0 ],
+					"gswitch" : [ 1 ],
+					"gswitch[1]" : [ 1 ],
+					"live.gain~" : [ -33.247293307086622 ],
+					"number" : [ 0 ],
+					"number[10]" : [ 3 ],
+					"number[11]" : [ 0 ],
+					"number[1]" : [ 0 ],
+					"number[2]" : [ 0 ],
+					"number[3]" : [ 0.0 ],
+					"number[4]" : [ 0.5 ],
+					"number[5]" : [ 0.0 ],
+					"number[6]" : [ 255.0 ],
+					"number[7]" : [ 0.0 ],
+					"number[8]" : [ 6.0 ],
+					"number[9]" : [ 1.5 ],
+					"toggle" : [ 1 ],
+					"toggle[1]" : [ 1 ],
+					"toggle[2]" : [ 1 ],
+					"toggle[3]" : [ 1 ],
+					"toggle[4]" : [ 1 ],
+					"umenu_adstatus_driver" : [ 7 ],
+					"umenu_adstatus_mic" : [ 1 ],
+					"umenu_adstatus_speaker" : [ 1 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
