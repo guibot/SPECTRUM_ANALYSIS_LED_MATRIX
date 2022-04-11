@@ -1,5 +1,5 @@
 // list of input devices
-int pots[] = {A4, A5, A6, A7, A0, A1, A2, A3};
+int pots[] = {A6, A5, A4, A7, A0, A1, A2, A3};
 int buttons[] = {12, 11, 10, 9, 8, 7, 6, 5};
 
 // FastLEd lybrary
@@ -101,7 +101,7 @@ int pot_previous_scale;
 
 void read_pots_serial_to_max()
 {
-  pot_gain = map(analogRead(A7), 0, 1023, 0, 255);
+  pot_gain = map(analogRead(A2), 0, 1023, 0, 255);
   pot_scale = map(analogRead(A3), 0, 1023, 0, 255);
 
   pot_smooth_gain = pot_smooth_gain * (1.0 - pot_filter) + pot_gain * pot_filter;
@@ -151,13 +151,13 @@ void serial_read()
 
 void leds_state_update()
 {
-  max_brightnessR = map(analogRead(A4), 0, 1023, 0, 255);
-  max_brightnessG = map(analogRead(A5), 0, 1023, 0, 255);
-  max_brightnessB = map(analogRead(A6), 0, 1023, 0, 255);
+  max_brightnessR = map(analogRead(A6), 0, 1023, 0, 255);
+  max_brightnessG = map(analogRead(A4), 0, 1023, 0, 255);
+  max_brightnessB = map(analogRead(A0), 0, 1023, 0, 255);
 
-  fadeoutR = map(analogRead(A0), 0, 1023, 0, 50);
-  fadeoutG = map(analogRead(A1), 0, 1023, 0, 50);
-  fadeoutB = map(analogRead(A2), 0, 1023, 0, 50);
+  fadeoutR = map(analogRead(A5), 0, 1023, 0, 50);
+  fadeoutG = map(analogRead(A7), 0, 1023, 0, 50);
+  fadeoutB = map(analogRead(A1), 0, 1023, 0, 50);
   
 
 
