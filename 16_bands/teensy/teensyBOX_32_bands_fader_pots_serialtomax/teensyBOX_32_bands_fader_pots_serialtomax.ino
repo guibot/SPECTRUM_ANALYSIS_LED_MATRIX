@@ -119,17 +119,17 @@ void read_pots_serial_to_max()
 
   if (pot_smooth_gain != pot_previous_gain)
   {
-    Serial.print("1");
+    Serial.print(pot_smooth_gain);
     Serial.print(" ");
-    Serial.println(pot_smooth_gain);
+    Serial.println("1");
     pot_previous_gain = pot_smooth_gain;
     }
 
   if (pot_smooth_scale != pot_previous_scale)
   {
-    Serial.print("2");
+    Serial.print(pot_smooth_scale);
     Serial.print(" ");
-    Serial.println(pot_smooth_scale);
+    Serial.println("2");
     pot_previous_scale = pot_smooth_scale;
     }
   /**/
